@@ -15,11 +15,15 @@ $(document).ready(function() {
     window.dancers.push(dancer);
   });
   
-  // $('.Lineup').click(function() {
-  //   for (let i = 0; i < window.dancers.length; i++) {
-  //     window.dancers[i].$node.animate({left : '250px'});
-  //   }
-  // });
+  $('.Lineup').click(function() {
+    for (let i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].$node.animate({left : '250px'});
+    }
+  });
+  $(window.dancers[0].$node).mouseover(function() {
+    $(window.dancers.$node).hide();
+  })
+  
 
 });
 

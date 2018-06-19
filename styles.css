@@ -6,16 +6,13 @@ body{
   background-size: 100%;
   background-image: url('http://backgroundcheckall.com/wp-content/uploads/2017/12/dance-floor-background-8838.jpg')
 }
-body{
-  color: lightblue;
-  
-}
 
 .title, .addDancerButton{
   color: white;
   letter-spacing: 3px;
   padding:5px 12px;
-  float:right;
+  float:center;
+  text-decoration: none;
 }
 
 .topbar{
@@ -26,4 +23,10 @@ body{
 .dancer{
   position:absolute;
 }
-
+.Lineup {
+    color: white;
+  letter-spacing: 3px;
+  padding:5px 12px;
+  float:center;
+  text-decoration: none;
+}
