@@ -12,7 +12,8 @@ body{
 }
 
 .title, .addDancerButton{
-  align-self: center;
+  color: white;
+  letter-spacing: 3px;
   padding:5px 12px;
   float:right;
 }
@@ -23,11 +24,11 @@ body{
 }
 
 .dancer{
-  /*background-image: url('dancer1.png')*/
+ 
   border:10px solid;
   border-radius:10px;
   position:absolute;
   color: yellow;
-  padding: 20px;
-  
+  padding: 20px;  
 }
+
