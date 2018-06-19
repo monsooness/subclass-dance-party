@@ -24,11 +24,6 @@ body{
 }
 
 .dancer{
- 
-  border:10px solid;
-  border-radius:10px;
   position:absolute;
-  color: yellow;
-  padding: 20px;  
 }
 
