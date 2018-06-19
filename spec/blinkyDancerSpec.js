@@ -17,9 +17,40 @@ describe('blinkyDancer', function() {
     blinkyDancer.step();
     expect(blinkyDancer.$node.toggle.called).to.be.true;
   });
+  
+describe('sizedDancer', function() {
+
+  var sizedDancer, clock;
+  var timeBetweenSteps = 100;
+
+  beforeEach(function() {
+    clock = sinon.useFakeTimers();
+    sizedDancer = makeSizedDancer(10, 20, timeBetweenSteps);
+  });
+
+  it('should have a jQuery $node object', function() {
+    expect(sizedDancer.$node).to.be.an.instanceof(jQuery);
+  });
+});
+  
+describe('animatedDancer', function() {
+
+  var animatedDancer, clock;
+  var timeBetweenSteps = 100;
+
+  beforeEach(function() {
+    clock = sinon.useFakeTimers();
+    animatedDancer = makeAnimatedDancer(10, 20, timeBetweenSteps);
+  });
+
+  it('should have a jQuery $node object', function() {
+    expect(animatedDancer.$node).to.be.an.instanceof(jQuery);
+  });
+});
+  
 
   describe('dance', function() {
-    xit('should call step at least once per second', function() {
+    it('should call step at least once per second', function() {
       sinon.spy(blinkyDancer, 'step');
       expect(blinkyDancer.step.callCount).to.be.equal(0);
       clock.tick(timeBetweenSteps); // ? it seems an extra tick is necessary...
