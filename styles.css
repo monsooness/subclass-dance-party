@@ -1,31 +1,33 @@
 body, html{
-  height:100%;
+  height:90%;
 }
 body{
-  margin: 0px;
-  background-color:#444;
   font-size: 18px;
-}
-body, a:link, a:visited, a:active{
-  color: lightblue;
+  background-size: 100%;
   background-image: url('http://backgroundcheckall.com/wp-content/uploads/2017/12/dance-floor-background-8838.jpg')
 }
+body{
+  color: lightblue;
+  
+}
+
 .title, .addDancerButton{
+  align-self: center;
   padding:5px 12px;
   float:right;
 }
+
 .topbar{
   height:32px;
-  background-color: #555;
+  background-color: black;
 }
-.title{
-  background-color: #777;
-}
+
 .dancer{
-  border:10px solid red;
+  /*background-image: url('dancer1.png')*/
+  border:10px solid;
   border-radius:10px;
   position:absolute;
   color: yellow;
   padding: 20px;
-  background-image: url('dancer1.png')
+  
 }
